@@ -83,9 +83,9 @@ const HeroSection = () => {
               View Properties
             </Button>
             <Button 
-              variant="outline" 
+              variant="secondary"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-navy px-8 py-3 text-lg"
+              className="bg-navy/20 border border-gold text-gold hover:bg-gold hover:text-navy px-8 py-3 text-lg backdrop-blur-sm transition-all duration-300"
               asChild
             >
               <a href="tel:+1234567890">Schedule Consultation</a>
