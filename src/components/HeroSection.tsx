@@ -33,16 +33,14 @@ const HeroSection = () => {
         {heroImages.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-2000 ${
-              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            className={`absolute inset-0 transition-all duration-[3000ms] ease-in-out ${
+              index === currentImageIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
             }`}
           >
             <div 
               className="parallax-bg w-full h-full bg-cover bg-center bg-no-repeat"
               style={{ 
-                backgroundImage: `url(${image})`,
-                transform: `translateY(${index === currentImageIndex ? '0' : '20px'})`,
-                transition: 'transform 2s ease-out'
+                backgroundImage: `url(${image})`
               }}
             />
           </div>
