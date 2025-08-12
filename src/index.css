@@ -8,55 +8,33 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Eumentis Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 221 39% 11%;
+    --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 221 39% 11%;
+    --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 221 39% 11%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    /* Gold primary color */
-    --primary: 45 85% 53%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    /* Deep navy secondary */
-    --secondary: 221 69% 16%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    /* Gold accent */
-    --accent: 45 85% 53%;
-    --accent-foreground: 221 39% 11%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 45 85% 53%;
-
-    /* Custom Eumentis Variables */
-    --gold: 45 85% 53%;
-    --navy: 221 69% 16%;
-    --charcoal: 220 13% 18%;
-    
-    /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(45 85% 53%) 0%, hsl(43 74% 49%) 100%);
-    --gradient-navy: linear-gradient(135deg, hsl(221 69% 16%) 0%, hsl(220 60% 20%) 100%);
-    --gradient-hero: linear-gradient(rgba(10, 31, 68, 0.7), rgba(10, 31, 68, 0.4));
-    
-    /* Shadows */
-    --shadow-gold: 0 10px 30px -5px hsl(45 85% 53% / 0.3);
-    --shadow-elegant: 0 20px 25px -5px hsl(221 39% 11% / 0.1), 0 10px 10px -5px hsl(221 39% 11% / 0.04);
-    
-    /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
 
@@ -123,97 +101,5 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Poppins', sans-serif;
-  }
-}
-
-@layer components {
-  /* Hero animations */
-  .hero-enter {
-    animation: heroFadeIn 1.2s ease-out forwards;
-  }
-  
-  .hero-text {
-    animation: slideUpFade 1s ease-out 0.3s both;
-  }
-  
-  .floating-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 50;
-    box-shadow: var(--shadow-gold);
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  .property-card {
-    transition: var(--transition-smooth);
-  }
-  
-  .property-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-elegant);
-  }
-  
-  .parallax-bg {
-    transform: translateZ(0);
-    will-change: transform;
-  }
-  
-  .navbar-blur {
-    backdrop-filter: blur(10px);
-    background: hsla(221, 69%, 16%, 0.95);
-  }
-}
-
-@layer utilities {
-  .text-gradient-gold {
-    background: var(--gradient-gold);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  
-  .bg-gradient-gold {
-    background: var(--gradient-gold);
-  }
-  
-  .bg-gradient-navy {
-    background: var(--gradient-navy);
-  }
-  
-  .bg-gradient-hero {
-    background: var(--gradient-hero);
-  }
-}
-
-@keyframes heroFadeIn {
-  from {
-    opacity: 0;
-    transform: scale(1.1);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes slideUpFade {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
   }
 }
