@@ -8,9 +8,9 @@ const FloatingCallButton = () => {
       size="lg"
       asChild
     >
-      <a href="tel:+1234567890" className="flex items-center justify-center">
+      <a href="tel:+1234567890" className="flex items-center gap-2">
         <Phone size={20} />
-        <span className="hidden sm:inline ml-2">Call Now</span>
+        Call Now
       </a>
     </Button>
   );
