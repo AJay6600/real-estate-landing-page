@@ -33,16 +33,14 @@ const HeroSection = () => {
         {heroImages.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-2000 ${
-              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            className={`absolute inset-0 transition-all duration-[3000ms] ease-in-out ${
+              index === currentImageIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
             }`}
           >
             <div 
               className="parallax-bg w-full h-full bg-cover bg-center bg-no-repeat"
               style={{ 
-                backgroundImage: `url(${image})`,
-                transform: `translateY(${index === currentImageIndex ? '0' : '20px'})`,
-                transition: 'transform 2s ease-out'
+                backgroundImage: `url(${image})`
               }}
             />
           </div>
@@ -85,9 +83,9 @@ const HeroSection = () => {
               View Properties
             </Button>
             <Button 
-              variant="outline" 
+              variant="secondary"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-navy px-8 py-3 text-lg"
+              className="bg-navy/20 border border-gold text-gold hover:bg-gold hover:text-navy px-8 py-3 text-lg backdrop-blur-sm transition-all duration-300"
               asChild
             >
               <a href="tel:+1234567890">Schedule Consultation</a>
