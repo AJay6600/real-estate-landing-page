@@ -108,7 +108,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8  left-48 md:left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+      <div className="absolute bottom-8 w-full flex justify-center text-white animate-bounce">
         <ChevronDown
           size={32}
           className="cursor-pointer hover:text-primary transition-colors duration-200"
@@ -117,7 +117,7 @@ const HeroSection = () => {
       </div>
 
       {/* Image Indicators */}
-      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-20 w-full flex  justify-center space-x-2">
         {heroImages.map((_, index) => (
           <button
             key={index}
