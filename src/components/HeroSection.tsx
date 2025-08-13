@@ -90,7 +90,6 @@ const HeroSection = () => {
             <Button
               size="lg"
               className="bg-gradient-gold hover:opacity-90 text-navy font-semibold px-8 py-3 text-lg hover:px-10 hover:py-6 transition-all ease-in-out"
-              onClick={scrollToProperties}
             >
               <Phone size={20} fill="navy" />
               <a href="tel:+15074618168">Call Now</a>
@@ -99,9 +98,10 @@ const HeroSection = () => {
               variant="secondary"
               size="lg"
               className="bg-navy/20 border border-gold text-gold hover:bg-gold hover:text-navy px-8 py-3 text-lg backdrop-blur-sm duration-300 hover:px-10 hover:py-6 transition-all ease-in-out"
+              onClick={scrollToProperties}
               asChild
             >
-              <a href="#properties">View Properties</a>
+              <p>View Properties</p>
             </Button>
           </div>
         </div>
