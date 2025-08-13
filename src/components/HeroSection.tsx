@@ -89,7 +89,7 @@ const HeroSection = () => {
           >
             <Button
               size="lg"
-              className="bg-gradient-gold hover:opacity-90 text-navy font-semibold px-8 py-3 text-lg"
+              className="bg-gradient-gold hover:opacity-90 text-navy font-semibold px-8 py-3 text-lg hover:px-10 hover:py-6 transition-all ease-in-out"
               onClick={scrollToProperties}
             >
               <Phone size={20} fill="navy" />
@@ -98,17 +98,17 @@ const HeroSection = () => {
             <Button
               variant="secondary"
               size="lg"
-              className="bg-navy/20 border border-gold text-gold hover:bg-gold hover:text-navy px-8 py-3 text-lg backdrop-blur-sm transition-all duration-300"
+              className="bg-navy/20 border border-gold text-gold hover:bg-gold hover:text-navy px-8 py-3 text-lg backdrop-blur-sm duration-300 hover:px-10 hover:py-6 transition-all ease-in-out"
               asChild
             >
-              <a href="tel:+1234567890">View Properties</a>
+              <a href="#properties">View Properties</a>
             </Button>
           </div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8  left-48 transform -translate-x-1/2 text-white animate-bounce">
+      <div className="absolute bottom-8  left-48 md:left-1/2 transform -translate-x-1/2 text-white animate-bounce">
         <ChevronDown
           size={32}
           className="cursor-pointer hover:text-primary transition-colors duration-200"
